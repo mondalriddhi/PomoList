@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="pomoStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="head">
+        <p class="title">Pomo<span id="title_des">List</span></p>
+    </div>
+</header>
+<body>
+    <div class="hero">
+        <div class="timer_section">
+            <div class="main1">
+                <div class="first">
+                    <p class="label">Work</p><p class="label">Sessions</p><p class="label">Break</p>
+                </div>
+                <div class="timer">
+                    <p class="w_min work" >25</p><p class="work">:</p><p class="w_sec work">00</p>
+                    <p class="counter work">0</p>
+                    <p class="b_min work">5</p><p class="work">:</p><p class="b_sec work">00</p>
+                </div>
+                <div class="button_section">
+                    <button id="start" class="btn">Start</button>
+                    <button id="pause" class="btn">Pause</button>
+                    <button id="reset" class="btn">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="todo_section">
+            <div class="main2">
+                <h1>Tasks to do</h1>
+                <div class="inputs"></div>
+                    <input type="text" placeholder="Enter task" id="inp">
+                    <button id="toadd" onclick="Add()">Add</button>
+                <div class="text">
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="pomoScript.js"></script>
+</body>
+</html>
